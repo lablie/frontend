@@ -1,0 +1,1573 @@
+/*====================================*>> font-face
+/*====================================*/
+/*====================================*  >> Silent Class
+/*====================================*/
+/* line 6, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_silentclasses.scss */
+.boxwrap, .boxwrap-con, .masterhead-wrap, .logo-con, .footer, .footer__inner, .footer-nav, .footer--other, .review__list {
+  *zoom: 1;
+}
+
+/* line 63, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_mixins.scss */
+.boxwrap:before, .boxwrap-con:before, .masterhead-wrap:before, .logo-con:before, .footer:before, .footer__inner:before, .footer-nav:before, .footer--other:before, .review__list:before, .boxwrap:after, .boxwrap-con:after, .masterhead-wrap:after, .logo-con:after, .footer:after, .footer__inner:after, .footer-nav:after, .footer--other:after, .review__list:after {
+  content: "";
+  display: table;
+}
+
+/* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_mixins.scss */
+.boxwrap:after, .boxwrap-con:after, .masterhead-wrap:after, .logo-con:after, .footer:after, .footer__inner:after, .footer-nav:after, .footer--other:after, .review__list:after {
+  clear: both;
+}
+
+/*====================================*>> arvo
+/*====================================*/
+@font-face {
+  font-family: 'Gotham';
+  font-weight: normal;
+  src: url("../fonts/gotham/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: bold;
+  src: url("../fonts/gotham/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 700;
+  src: url("../fonts/gotham/Gotham-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-weight: 300;
+  src: url("../fonts/gotham/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham-book';
+  font-weight: normal;
+  src: url("../fonts/gotham/Gotham-Book.otf") format("opentype");
+}
+
+/*====================================*  >> Functions
+/*====================================*/
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+* {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+input, textarea {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* line 23, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+body, * {
+  font-family: "Gotham", "Helvetica", sans-serif;
+  outline: none !important;
+}
+
+/* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  font-size: 13px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 81.3125em) {
+  /* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 93.75em) {
+  /* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+  html {
+    font-size: 15px;
+  }
+}
+
+/* line 35, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+body {
+  background-attachment: fixed;
+  background-color: #fff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Gotham", "Helvetica", sans-serif;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 54, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* line 60, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 61, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+i {
+  font-style: normal;
+}
+
+/* line 62, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+/* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+a:active, a:focus {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none !important;
+  font-family: inherit;
+}
+
+/* line 8, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_breakpoints.scss */
+.hoverable a:hover {
+  cursor: pointer;
+}
+
+/* line 72, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_global.scss */
+.hoverable a:hover:hover {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 12, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 33, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 47, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 60, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 70, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 79, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 90, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 103, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 113, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 123, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 132, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 142, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 153, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 202, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 211, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 220, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 228, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 240, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 256, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 266, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 277, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 288, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 300, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 311, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 322, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 336, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 345, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 354, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 364, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 374, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 383, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 393, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 406, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 415, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 426, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 434, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 445, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/base/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.contents-wrap {
+  background-image: -owg-radial-gradient(75% 103%, #1789c2 30%, #032b68 70%);
+  background-image: -webkit-radial-gradient(75% 103%, #1789c2 30%, #032b68 70%);
+  background-image: -moz-radial-gradient(75% 103%, #1789c2 30%, #032b68 70%);
+  background-image: -o-radial-gradient(75% 103%, #1789c2 30%, #032b68 70%);
+  background-image: radial-gradient(75% 103%, #1789c2 30%, #032b68 70%);
+  display: block;
+  padding: 35px 10px;
+  position: relative;
+  width: 100%;
+}
+
+/* line 9, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: 1099px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 18, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap-con {
+  width: 100%;
+  height: 100;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap-con.-titlehead {
+  margin-bottom: 20px;
+}
+
+/* line 28, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap__items {
+  float: left;
+  width: 50%;
+  display: block;
+  position: relative;
+}
+
+/* line 72, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_mixins.scss */
+.boxwrap__items:nth-child(n) {
+  margin-right: 0;
+}
+
+/* line 75, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_mixins.scss */
+.boxwrap__items:nth-child(2n) {
+  margin-right: 0;
+}
+
+/* line 33, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap__items.boxwrap--select {
+  float: left;
+}
+
+/* line 34, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap__items.boxwrap--clientreview {
+  float: right;
+}
+
+/* line 37, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap--title {
+  color: #fff;
+  display: block;
+  font-family: 'Gotham';
+  font-size: 42px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/* line 48, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.boxwrap--subtitle {
+  color: #fff;
+  display: block;
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* line 58, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 61, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.scroll::-webkit-scrollbar, .scroll::-webkit-scrollbar-track, .scroll::-webkit-scrollbar-thumb {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.scroll::-webkit-scrollbar {
+  width: 8px;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 75, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_main.scss */
+.scroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #b2b2b2;
+}
+
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.masterhead-wrap {
+  width: 100%;
+  height: 90px;
+  display: block;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* line 9, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.masterhead {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 1099px;
+}
+
+/* line 17, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.logo-con {
+  width: auto;
+  height: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  float: left;
+  position: relative;
+  top: 50%;
+}
+
+@media only screen and (max-width: 55em) {
+  /* line 17, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+  .logo-con {
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 37.4375em) {
+  /* line 17, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+  .logo-con {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+/* line 32, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.logo-con span {
+  color: #01277d;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 10px;
+  text-transform: uppercase;
+  top: -13px;
+  position: relative;
+}
+
+@media only screen and (max-width: 55em) {
+  /* line 32, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+  .logo-con span {
+    display: block;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 37.4375em) {
+  /* line 32, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+  .logo-con span {
+    text-align: center;
+  }
+}
+
+/* line 55, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.logo {
+  width: 290px;
+  height: 50px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/logo.png");
+  display: inline-block;
+  position: relative;
+}
+
+/* line 62, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.benefit-con {
+  display: block;
+  float: right;
+  top: 8px;
+  position: relative;
+}
+
+@media only screen and (max-width: 37.4375em) {
+  /* line 62, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+  .benefit-con {
+    display: none;
+  }
+}
+
+/* line 72, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.benefit-con li {
+  display: block;
+  padding-left: 17px;
+  position: relative;
+}
+
+/* line 77, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.benefit-con li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* line 79, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.benefit-con li:before {
+  width: 12px;
+  height: 11px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/ico-check.png");
+  content: '';
+  display: block;
+  left: 0;
+  top: 2px;
+  position: absolute;
+}
+
+/* line 90, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_masterhead.scss */
+.benefit-con span {
+  color: #000;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-wrap {
+  width: 100%;
+  height: 241px;
+  color: #000;
+  display: block;
+  position: relative;
+}
+
+/* line 10, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 1099px;
+  padding-top: 35px;
+}
+
+/* line 19, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer__inner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer__items {
+  display: block;
+  float: left;
+  position: relative;
+}
+
+/* line 30, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer--logo {
+  width: 274px;
+}
+
+/* line 33, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer--logo span {
+  color: #01277d;
+  display: block;
+  font-size: 11px;
+  font-weight: 300;
+  margin-top: 5px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* line 46, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-logo {
+  width: 219px;
+  height: 35px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/logo.png");
+  display: block;
+  position: relative;
+}
+
+/* line 52, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer--nav {
+  width: 570px;
+}
+
+/* line 55, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-nav {
+  display: block;
+  margin: 13px auto 0;
+  list-style: none;
+  width: 390px;
+}
+
+/* line 62, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-nav li {
+  display: block;
+  float: left;
+}
+
+/* line 66, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-nav li a {
+  color: #929ba4;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+}
+
+/* line 76, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* line 79, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer--other {
+  width: 255px;
+}
+
+/* line 84, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.other-con {
+  display: block;
+  float: right;
+}
+
+/* line 88, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.other__list {
+  display: block;
+  position: relative;
+}
+
+/* line 92, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.other__list:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+/* line 95, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer__copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -55px;
+}
+
+/* line 102, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer__copyright p {
+  color: #929ba4;
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-wrap {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+}
+
+/* line 10, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-con {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 550px;
+  -webkit-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+  -ms-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 21px -1px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  display: block;
+  padding: 48px 0;
+  max-width: 730px;
+  overflow: hidden;
+  top: -100%;
+}
+
+/* line 23, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  padding: 0 30px;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 30, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category span {
+  display: block;
+  font-familyL: 'Gotham-book';
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 39, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category h3 {
+  color: #2b2c2d;
+  display: block;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 52, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category__con {
+  width: 100%;
+  height: 380px;
+  display: block;
+  margin-top: 30px;
+  position: relative;
+  overflow: auto;
+}
+
+/* line 59, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category-list {
+  list-style: none;
+}
+
+/* line 62, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category-list li {
+  color: #1864af;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: 'Gotham-book';
+  font-size: 14px;
+  font-weight: normal;
+  padding: 6px 0;
+  width: 50%;
+}
+
+/* line 75, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_modal.scss */
+.modal-category-list li:hover {
+  font-weight: bold;
+}
+
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-star {
+  display: inline-block;
+  height: 14px;
+  position: relative;
+  top: 1px;
+}
+
+/* line 7, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-star--1 {
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/star-1.png");
+  width: 14px;
+}
+
+/* line 11, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-star--2 {
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/star-2.png");
+  width: 31px;
+}
+
+/* line 15, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-star--3 {
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/star-3.png");
+  width: 49px;
+}
+
+/* line 19, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-star--4 {
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/star-34.png");
+  width: 66px;
+}
+
+/* line 23, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-star--5 {
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/star-5.png");
+  width: 83px;
+}
+
+/* line 30, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-num {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #d68d00;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 14.36px;
+  font-weight: bold;
+  padding-top: 7px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+/* line 48, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-close {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-image: url("../img/ico-close.png");
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* line 57, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/modules/_icons.scss */
+.ico-close:hover {
+  opacity: 0.6;
+}
+
+/* line 1, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input-con {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 6, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input-con:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* line 9, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--lbl {
+  display: block;
+  font-family: 'Gotham';
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+/* line 19, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--cat {
+  display: block;
+  font-family: 'Gotham-book';
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  max-width: 515px;
+  text-align: center;
+}
+
+/* line 30, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--cat span {
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 33, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--cat span:before {
+  width: 100%;
+  height: 1px;
+  background: #6da2c7;
+  bottom: 0;
+  content: '';
+  position: absolute;
+}
+
+/* line 43, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--holder {
+  width: 100%;
+  height: 65px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  background: #fff;
+  display: block;
+  max-width: 515px;
+  padding: 0 15px;
+}
+
+/* line 51, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--holder.active-drop {
+  -webkit-box-shadow: 0px 0px 37px -3px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 37px -3px rgba(255, 255, 255, 0.75);
+  -ms-box-shadow: 0px 0px 37px -3px rgba(255, 255, 255, 0.75);
+  -o-box-shadow: 0px 0px 37px -3px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 37px -3px rgba(255, 255, 255, 0.75);
+}
+
+/* line 55, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.input--holder input[type="text"] {
+  width: calc(100% - 60px);
+  height: 30px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: 0;
+  color: #4e555c;
+  display: block;
+  float: left;
+  font-family: 'Gotham';
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 10px;
+  outline: 0;
+  padding: 0 10px;
+  position: relative;
+  top: 50%;
+}
+
+/* line 75, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.selected-category {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #4e555c;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 20px;
+  position: relative;
+  top: 50%;
+  width: calc(100% - 60px);
+}
+
+/* line 92, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.dropdown-category {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 37px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 37px -3px rgba(0, 0, 0, 0.75);
+  -ms-box-shadow: 0px 0px 37px -3px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 0px 0px 37px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 37px -3px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  display: none;
+  margin-top: 10px;
+  max-width: 515px;
+  padding: 20px 15px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 104, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.category-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+/* line 109, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.category-list li {
+  color: #000;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 6px 10px 6px 40px;
+}
+
+/* line 118, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.category-list li:hover {
+  background: #bcd3e3;
+  font-weight: bold;
+}
+
+/* line 125, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review-con {
+  margin-left: 126px;
+}
+
+@media only screen and (max-width: 81.25em) {
+  /* line 125, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+  .review-con {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  /* line 125, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+  .review-con {
+    margin-left: 20px;
+  }
+}
+
+/* line 130, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review--title {
+  display: block;
+  font-family: 'Gotham-book';
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 28px;
+}
+
+/* line 140, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review__list {
+  cursor: pointer;
+  display: block;
+  padding: 0 10px 15px;
+  position: relative;
+}
+
+/* line 147, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review__list:not(:last-child) {
+  border-bottom: 2px solid #8ca0bb;
+  margin-bottom: 20px;
+}
+
+/* line 153, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review__info {
+  display: block;
+  float: left;
+  width: 95px;
+}
+
+/* line 157, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review__info span {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+/* line 164, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.info--img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  border: 1px solid #307bb0;
+  display: block;
+  margin: 0 auto 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 173, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.info--img img {
+  width: 100%;
+}
+
+/* line 176, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.info--name {
+  font-family: 'Gotham';
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* line 184, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.info--location {
+  color: #dadada;
+  font-family: 'Gotham';
+  font-size: 11px;
+  font-weight: 300;
+}
+
+/* line 192, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review__details {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  width: calc(100% - 95px);
+}
+
+/* line 198, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.review__details p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #e4e4e4;
+  font-family: 'Gotham-book';
+  font-size: 11px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+/* line 211, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.details__cat {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 216, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/pages/_home.scss */
+.details__cat span {
+  display: inline-block;
+  font-family: 'Gotham';
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=../style.map */

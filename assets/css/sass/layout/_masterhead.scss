@@ -1,0 +1,98 @@
+.masterhead-wrap {
+	@extend %cf;
+	@include wh(100%, 90px);
+	display: block;
+	padding: 0 10px;
+	position: relative;
+} //.masterhead-wrap
+
+.masterhead {
+	@include wh(100%, 100%);
+	display: block;
+	margin: 0 auto;
+	max-width: 1099px;
+} //.masterhead 
+
+
+.logo-con {
+	@extend %cf;
+	@include wh(auto, auto);
+	@include translateY(-50%);
+	display: block;
+	float: left;
+	position: relative;
+	top: 50%;
+	@include breakpoint(880px, 'max-width') { height: 70px }
+	@include breakpoint(599px, 'max-width') {
+		width: 300px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	span {
+		color: #01277d;
+		display: inline-block;
+		font: {
+			size: 15px;
+			weight: 300;
+		}
+		margin-left: 10px;
+		text-transform: uppercase;
+		top: -13px;
+		position: relative;
+
+		@include breakpoint(880px, 'max-width') {
+			display: block;
+			margin-top: 15px;
+			margin-left: 0;
+		}
+
+		@include breakpoint(599px, 'max-width') { text-align: center; }
+
+
+	}
+}
+.logo {
+	@include wh(290px, 50px);
+	@include bgs('../img/logo.png', contain);	
+	display: inline-block;
+	position: relative;
+}
+
+.benefit-con {
+	display: block;
+	float: right;
+	top: 8px;
+	position: relative;
+
+	@include breakpoint(599px, 'max-width') {
+		display: none;
+	}
+
+	li {
+		display: block;
+		padding-left: 17px;
+		position: relative;
+
+		&:not(:last-child) { margin-bottom: 10px; }
+
+		&:before {
+			@include wh(12px, 11px);
+			@include bgs('../img/ico-check.png', contain);	
+			content: '';
+			display: block;
+			left: 0;
+			top: 2px;
+			position: absolute;
+		}
+	}
+
+	span {
+		color: #000;
+		display: block;
+		font: {
+			size: 14px;
+			weight: 300;
+		}
+	}
+}

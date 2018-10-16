@@ -1,0 +1,79 @@
+.modal-wrap {
+	@include wh(100%, 100%)
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 11;
+}
+
+.modal-con {
+	@include bradius(all, 15px)
+	@include vm()
+	@include wh(100%, 550px)
+	@include prefix(box-shadow, 0px 0px 21px -1px rgba(0,0,0,0.75));
+	background: #fff;
+	display: block;
+	padding: 48px 0;
+	max-width: 730px;
+	overflow: hidden;
+	top: -100%;
+}
+
+.modal-category {
+	@include wh(100%, 100%);
+	color: #000;
+	padding: 0 30px;
+	display: block;
+	overflow: hidden;
+
+	span {
+		display: block;
+		font: {
+			familyL: 'Gotham-book';
+			size: 14px;
+			weight: normal;
+		}
+	}
+
+	h3 {
+		color: #2b2c2d;
+		display: block;
+		font: {
+			size: 21px;
+			weight: 300;
+		}
+		margin-bottom: 5px;
+		position: relative;
+		text-transform: uppercase;
+	}
+} //.modal-category
+
+.modal-category__con {
+	@include wh(100%, 380px);
+	display: block;
+	margin-top: 30px;
+	position: relative;
+	overflow: auto;
+}
+.modal-category-list {
+	list-style: none;
+
+	li {
+		color: #1864af;
+		cursor: pointer;
+		display: block;
+		float: left;
+		font: {
+			family: 'Gotham-book';
+			size: 14px;
+			weight: normal;
+		}
+		padding: 6px 0;
+		width: 50%;
+
+		&:hover {
+			font-weight: bold;
+		}
+	}
+}

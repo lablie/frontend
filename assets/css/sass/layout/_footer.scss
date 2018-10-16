@@ -1,0 +1,111 @@
+.footer-wrap {
+	@include wh(100%, 241px);
+	// bottom: 0;
+	color: #000;
+	display: block;
+	// left: 0;
+	position: relative;
+}
+
+.footer {
+	@extend %cf;
+	@include wh(100%, 100%);
+	display: block;
+	margin: 0 auto;
+	max-width: 1099px;
+	padding-top: 35px;
+}
+
+.footer__inner {
+	@extend %cf;
+	@include wh(100%, auto);
+	display: block;
+}
+
+.footer__items {
+	display: block;
+	float: left;
+	position: relative;
+}
+.footer--logo {
+	width: 274px;
+
+	span {
+		color: #01277d;
+		display: block;
+		font: {
+			size: 11px;
+			weight: 300;
+		}
+		margin-top: 5px;
+		text-transform: uppercase;
+		position: relative;
+	}
+}
+
+.footer-logo {	
+	@include wh(219px, 35px);
+	@include bgs('../img/logo.png', contain);	
+	display: block;
+	position: relative;
+}
+.footer--nav {
+	width: 570px;
+}
+.footer-nav {
+	@extend %cf;
+	display: block;
+	margin: 13px auto 0;
+	list-style: none;
+	width: 390px;
+
+	li {
+		display: block;
+		float: left;
+		
+		a {
+			color: #929ba4;
+			cursor: pointer;
+			display: block;
+			font: {
+				size: 15px;
+				weight: normal;
+			}
+			position: relative;
+		}
+		&:not(:last-child) { margin-right: 50px; }
+	}
+}
+.footer--other {
+	@extend %cf;
+	width: 255px;
+}
+
+.other-con {
+	display: block;
+	float: right;
+}
+.other__list {
+	display: block;
+	position: relative;
+	
+	&:not(:last-child) { margin-bottom: 18px; }
+}
+
+.footer__copyright {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: -55px;
+	
+	p {
+		color: #929ba4;
+		display: block;
+		font: {
+			size: 13px;
+			weight: normal;
+		}
+		line-height: 1.5;
+	}
+}

@@ -1,0 +1,13 @@
+$BASE-FONTSIZE: 14px !default;
+$BASE-MAXWIDTH: 2000px !default;
+
+$gotham: 'Gotham';
+
+$FSTACK: (
+  $gotham,
+  'Helvetica',
+  sans-serif,
+);
+
+$FMAIN   : $FSTACK;
+

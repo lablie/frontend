@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Front-End</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+<body>
+	<div class="masterhead-wrap">
+		<div class="masterhead">
+			<div class="logo-con">
+				<a href=""></a>
+				<div class="logo"></div>
+				<span>Find the right lawyer now</span>
+			</div>
+
+			<ul class="benefit-con">
+				<li><span>No fee to present your case</span></li>
+				<li><span>Choose from lawyers in your area</span></li>
+				<li><span>A 100% confidential service</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="contents-wrap" > <!-- contents-wrap -->
+		<div class="boxwrap"> <!-- boxwrap -->
+			<div class="boxwrap-con -titlehead">
+				<h2 class="boxwrap--title">Find a Lawyer for your Legal Issue</h2>
+				<span class="boxwrap--subtitle">Fast, Free and Confidential</span>
+			</div>
+
+			<div class="boxwrap-con"> <!-- boxwrap-con -->
+				<div class="boxwrap__items boxwrap--input">
+					<div class="input-con">
+						<span class="input--lbl">Enter Zip Code or City:</span>
+						<div class="input--holder">
+							<i class="ico-num">1</i>
+							<input type="text" name="zip" placeholder="Does not have to be where you live">
+						</div>
+					</div>
+					<div class="input-con">
+						<span class="input--lbl">Choose a category:</span>
+						<div class="input--holder">
+							<i class="ico-num">2</i>
+							<span id="select-cat" class="selected-category">Click to choose a legal category</span>
+						</div>
+
+						<div class="dropdown-category">
+							<ul class="category-list">
+								<li>Family</li>
+								<li>Criminal Defense</li>
+								<li>Business</li>
+								<li>Personal Injury</li>
+								<li>Bankruptcy & Finances</li>
+								<li>Products & Services</li>
+								<li>Employment</li>
+								<li>Real Estate</li>
+								<li>Immigration</li>
+								<li>Wills, Trust & Estates</li>
+								<li>Government</li>
+								<li>Intellectual Property</li>
+							</ul>
+						</div>
+						<p class="input--cat">Can’t find your category? <span id="other-category"> Click here.</span></span>
+						
+					</div>
+				</div>
+
+				<div class="boxwrap__items boxwrap--clientreview"> <!-- boxwrap__items -->
+					<div class="review-con">
+						<h3 class="review--title">Clients review LegalMatch lawyers</h3>
+						<div class="review__list"> <!-- review__list -->
+							<div class="review__info">
+								<div class="info--img">
+									<img src="assets/img/client-review/reviewer-1.png" alt="">
+								</div>
+
+								<span class="info--name">Mitchell M.</span>
+								<span class="info--location">Cherry Hill, NJ</span>
+							</div>
+							<div class="review__details">
+								<div class="details__cat">
+									<span class="details--lbl">Family Law</span>
+									<i class="ico-star ico-star--5"></i>
+								</div>
+								<p class="details--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur voluptatem molestiae nostrum quisquam dicta qui quod obcaecati cumque. Doloremque maiores quaerat recusandae amet ex dolor, sit sed quidem, similique.</p>
+								<span class="read-more">Read Review</span>
+							</div>
+						</div> <!-- // review__list -->
+
+						<div class="review__list"> <!-- review__list -->
+							<div class="review__info">
+								<div class="info--img">
+									<img src="assets/img/client-review/reviewer-2.png" alt="">
+								</div>
+								<span class="info--name">Joel C.</span>
+								<span class="info--location">Little Rock, AK</span>
+							</div>
+							<div class="review__details">
+								<div class="details__cat">
+									<span class="details--lbl">Job & Employment Law </span>
+									<i class="ico-star ico-star--5"></i>
+								</div>
+								<p class="details--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur voluptatem molestiae nostrum quisquam dicta qui quod obcaecati cumque. Doloremque maiores quaerat recusandae amet ex dolor, sit sed quidem, similique.</p>
+								<span class="read-more">Read Review</span>
+							</div>
+						</div> <!-- // review__list -->
+
+						<div class="review__list"> <!-- review__list -->
+							<div class="review__info">
+								<div class="info--img">
+									<img src="assets/img/client-review/reviewer-3.png" alt="">
+								</div>
+								<span class="info--name">Brigida R.</span>
+								<span class="info--location">Dallas, TX</span>
+							</div>
+							<div class="review__details">
+								<div class="details__cat">
+									<span class="details--lbl">Family Law</span>
+									<i class="ico-star ico-star--5"></i>
+								</div>
+								<p class="details--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur voluptatem molestiae nostrum quisquam dicta qui quod obcaecati cumque. Doloremque maiores quaerat recusandae amet ex dolor, sit sed quidem, similique.</p>
+								<span class="read-more">Read Review</span>
+							</div>
+						</div> <!-- // review__list -->
+
+					</div>
+					
+				</div> <!-- // boxwrap__items -->
+			</div> <!-- // boxwrap-con -->
+
+		</div> <!-- // boxwrap -->
+	</div> <!-- // contents-wrap -->
+
+	<div class="modal-wrap">
+		<div class="modal-con modal--category">
+			<i id="modal-close" class="ico-close"></i>
+			<div class="modal-category">
+				<h3>Other categories</h3>
+				<span>Choose the category that best fits your case</span>
+				
+				<div class="modal-category__con scroll">
+					<ul class="modal-category-list">
+						<li>Abuse (Child, Domestic, Sexual)</li>
+						<li>Agencies & Administration</li>
+						<li>Automobile ( DUI, Crimes, Speeding )</li>
+						<li>Automobiles ( Accidents, Insurance )</li>
+						<li>Banking ( Business, Consumer )</li>
+						<li>Bars & Restaurants</li>
+						<li>Business Formation & Dissolution</li>
+						<li>Children (Adoption, Custody, Support)</li>
+						<li>Class Actions (Bad Drugs, Products)</li>
+						<li>Commercial Law and Contracts</li>
+						<li>Commercial Real Estate</li>
+						<li>Constitutional Law</li>
+						<li>Construction (Disputes, Liens)</li>
+						<li>Categories Item Here</li>
+						<li>Loremipsum Dolorsitamet,</li>
+						<li>Lonsectetur Scingelit  (Baseererkj, Mereit)</li>
+						<li>Miam Euvelit</li>
+						<li>Mempor Auctor (Estiarma, Toeruslej)</li>
+						<li>Nisultricies Dictumest.</li>
+						<li>Ntfring Sodalelit (Aeeticl Restoustoust)</li>
+						<li>Ntvarius Lectus & Congue</li>
+						<li>Pellentesque</li>
+						<li>Rigula Aliquamattis (Nestusotu, Wewreist)</li>
+						<li>Set Tigulempor</li>
+						<li>Sehicula Sedsitamet</li>
+						<li>Seque Nesturre</li>
+						<li>Tollis Gaurissed</li>
+						<li>Tempor Auctor (Estiarma, Toeruslej)</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-wrap">
+		<div class="footer">
+			<div class="footer__inner">
+				<div class="footer__items footer--logo">
+					<div class="footer-logo__con">
+						<div class="footer-logo"></div>
+						<span>Find the right lawyer now</span>
+					</div>	
+				</div>
+				<div class="footer__items footer--nav">
+					<ul class="footer-nav">
+						<li><a href="">User Agreement</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Site Map</a></li>
+					</ul>
+				</div>
+				<div class="footer__items footer--other">
+					<div class="other-con">
+						<div class="other__list">
+							<a href=""><img src="assets/img/truste.jpg" alt=""></a>
+						</div>
+						<div class="other__list">
+							<a href=""><img src="assets/img/bbb.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<p>Copyright 1999-2018 LegalMatch. All rights reserved. LegalMatch®, <br/>
+				the LegalMatch logo, and the trade dress are trademarks of LegalMatch. Patents Pending.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modals -->
+
+	
+	<!-- Vendor: Javascripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Vendor: Angular, followed by custom Javascripts -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script> -->
+
+	<!-- Our Website Javascripts -->
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.ico-star {
+	display: inline-block;
+	height: 14px;
+	position: relative;
+	top: 1px;
+
+	&--1 { 
+		@include bgs('../img/star-1.png', contain)
+		width: 14px;
+	}
+	&--2 { 
+		@include bgs('../img/star-2.png', contain)
+		width: 31px;
+	}
+	&--3 { 
+		@include bgs('../img/star-3.png', contain)
+		width: 49px;
+	}
+	&--4 { 
+		@include bgs('../img/star-34.png', contain)
+		width: 66px;
+	}
+	&--5 { 
+		@include bgs('../img/star-5.png', contain)
+		width: 83px;
+	}
+
+} //.ico-star
+
+.ico-num {
+	@include wh(30px, 30px);
+	@include bradius(all, 50%);
+	@include translateY(-50%);
+	background: #d68d00;
+	color: #fff;
+	display: block;
+	float: left;
+	font: {
+		size: 14.36px;
+		weight: bold;
+	}
+	padding-top: 7px;
+	position: relative;
+	text-align: center;
+	top: 50%;
+} //.ico-num
+
+.ico-close {
+	@include wh(30px, 30px);
+	@include bgs('../img/ico-close.png', contain);
+	cursor: pointer;
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+
+	&:hover {
+		opacity: 0.6;
+	}
+}

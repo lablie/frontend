@@ -1,0 +1,79 @@
+.contents-wrap {
+	@include background-image(radial-gradient(75% 103%, #1789c2 30%, #032b68 70%));
+	display: block;
+	padding: 35px 10px;
+	position: relative;
+	width: 100%;
+}
+
+.boxwrap {
+	@extend %cf;
+	@include wh(100%, 100%);
+	display: block;
+	max-width: 1099px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.boxwrap-con {
+	@extend %cf;
+	@include wh(100%, 100);
+	display: block;
+	position: relative;
+	width: 100%; 
+
+	&.-titlehead { margin-bottom: 20px; }
+}
+
+.boxwrap__items {
+	@include cols(2, 0)
+	display: block;
+	position: relative;
+
+	&.boxwrap--select { float: left; }
+	&.boxwrap--clientreview { float: right; }
+}
+
+.boxwrap--title {
+	color: #fff;
+	display: block;
+	font: {
+		family: 'Gotham';
+		size: 42px;
+		weight: normal;
+	}
+	margin-bottom: 10px;
+}
+
+.boxwrap--subtitle {
+	color: #fff;
+	display: block;
+	font: {
+		family: 'Gotham';
+		size: 30px;
+		weight: 300;
+	}
+}
+
+.scroll {
+  overflow: { x: hidden; y: auto; }
+
+  &::-webkit-scrollbar, &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
+    @include prefix(box-sizing, border-box);
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    position: relative;
+    z-index: 10;
+  } // scrollbar
+
+  &::-webkit-scrollbar-track {
+
+  } // scrollbar-track
+
+  &::-webkit-scrollbar-thumb {
+    @include bradius(all, 20px);
+    background-color: #b2b2b2;
+  }
+} // scroll
