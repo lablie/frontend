@@ -3,18 +3,18 @@
 /*====================================*  >> Silent Class
 /*====================================*/
 /* line 6, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_silentclasses.scss */
-.boxwrap, .boxwrap-con, .masterhead-wrap, .logo-con, .footer, .footer__inner, .footer-nav, .footer--other, .review__list {
+.boxwrap, .boxwrap-con, .masterhead-wrap, .logo-con, .footer, .footer__inner, .footer-nav, .footer--other, .other-con, .review__list {
   *zoom: 1;
 }
 
 /* line 63, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_mixins.scss */
-.boxwrap:before, .boxwrap-con:before, .masterhead-wrap:before, .logo-con:before, .footer:before, .footer__inner:before, .footer-nav:before, .footer--other:before, .review__list:before, .boxwrap:after, .boxwrap-con:after, .masterhead-wrap:after, .logo-con:after, .footer:after, .footer__inner:after, .footer-nav:after, .footer--other:after, .review__list:after {
+.boxwrap:before, .boxwrap-con:before, .masterhead-wrap:before, .logo-con:before, .footer:before, .footer__inner:before, .footer-nav:before, .footer--other:before, .other-con:before, .review__list:before, .boxwrap:after, .boxwrap-con:after, .masterhead-wrap:after, .logo-con:after, .footer:after, .footer__inner:after, .footer-nav:after, .footer--other:after, .other-con:after, .review__list:after {
   content: "";
   display: table;
 }
 
 /* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/abstracts/_mixins.scss */
-.boxwrap:after, .boxwrap-con:after, .masterhead-wrap:after, .logo-con:after, .footer:after, .footer__inner:after, .footer-nav:after, .footer--other:after, .review__list:after {
+.boxwrap:after, .boxwrap-con:after, .masterhead-wrap:after, .logo-con:after, .footer:after, .footer__inner:after, .footer-nav:after, .footer--other:after, .other-con:after, .review__list:after {
   clear: both;
 }
 
@@ -929,10 +929,11 @@ template {
   height: 241px;
   color: #000;
   display: block;
+  padding: 0 10px;
   position: relative;
 }
 
-/* line 10, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 9, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer {
   width: 100%;
   height: 100%;
@@ -942,26 +943,48 @@ template {
   padding-top: 35px;
 }
 
-/* line 19, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 18, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer__inner {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 25, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 24, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer__items {
   display: block;
   float: left;
   position: relative;
 }
 
-/* line 30, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
-.footer--logo {
-  width: 274px;
+@media only screen and (max-width: 46.8125em) {
+  /* line 24, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer__items {
+    float: none;
+  }
 }
 
-/* line 33, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 31, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer--logo {
+  width: 25%;
+}
+
+@media only screen and (max-width: 57.4375em) {
+  /* line 31, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer--logo {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 46.8125em) {
+  /* line 31, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer--logo {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+/* line 36, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer--logo span {
   color: #01277d;
   display: block;
@@ -972,7 +995,21 @@ template {
   position: relative;
 }
 
-/* line 46, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 48, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer-logo__con {
+  display: block;
+  position: relative;
+}
+
+@media only screen and (max-width: 46.8125em) {
+  /* line 48, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer-logo__con {
+    margin: 0 auto;
+    width: 219px;
+  }
+}
+
+/* line 57, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer-logo {
   width: 219px;
   height: 35px;
@@ -987,12 +1024,34 @@ template {
   position: relative;
 }
 
-/* line 52, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
-.footer--nav {
-  width: 570px;
+@media only screen and (max-width: 57.4375em) {
+  /* line 57, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer-logo {
+    width: 100%;
+  }
 }
 
-/* line 55, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+.footer--nav {
+  width: 50%;
+}
+
+@media only screen and (max-width: 57.4375em) {
+  /* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer--nav {
+    width: 57%;
+  }
+}
+
+@media only screen and (max-width: 46.8125em) {
+  /* line 65, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer--nav {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+/* line 70, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer-nav {
   display: block;
   margin: 13px auto 0;
@@ -1000,13 +1059,13 @@ template {
   width: 390px;
 }
 
-/* line 62, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 77, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer-nav li {
   display: block;
   float: left;
 }
 
-/* line 66, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 81, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer-nav li a {
   color: #929ba4;
   cursor: pointer;
@@ -1016,34 +1075,71 @@ template {
   position: relative;
 }
 
-/* line 76, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 91, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer-nav li:not(:last-child) {
   margin-right: 50px;
 }
 
-/* line 79, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+/* line 94, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer--other {
-  width: 255px;
+  width: 25%;
 }
 
-/* line 84, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+@media only screen and (max-width: 57.4375em) {
+  /* line 94, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer--other {
+    width: 18%;
+  }
+}
+
+@media only screen and (max-width: 46.8125em) {
+  /* line 94, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer--other {
+    width: 100%;
+  }
+}
+
+/* line 102, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .other-con {
   display: block;
   float: right;
 }
 
-/* line 88, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+@media only screen and (max-width: 46.8125em) {
+  /* line 102, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .other-con {
+    float: none;
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* line 109, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .other__list {
   display: block;
   position: relative;
 }
 
-/* line 92, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+@media only screen and (max-width: 46.8125em) {
+  /* line 109, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .other__list {
+    float: left;
+  }
+}
+
+/* line 114, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .other__list:not(:last-child) {
   margin-bottom: 18px;
 }
 
-/* line 95, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+@media only screen and (max-width: 46.8125em) {
+  /* line 114, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .other__list:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+/* line 120, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer__copyright {
   display: block;
   width: 100%;
@@ -1052,7 +1148,24 @@ template {
   top: -55px;
 }
 
-/* line 102, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+@media only screen and (max-width: 57.4375em) {
+  /* line 120, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer__copyright {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 46.8125em) {
+  /* line 120, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
+  .footer__copyright {
+    margin-top: 20px;
+    top: 0;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 133, D:/Documents/LOVELY FOR EXAM/git/frontend/assets/css/sass/layout/_footer.scss */
 .footer__copyright p {
   color: #929ba4;
   display: block;

@@ -1,9 +1,8 @@
 .footer-wrap {
 	@include wh(100%, 241px);
-	// bottom: 0;
 	color: #000;
 	display: block;
-	// left: 0;
+	padding: 0 10px;
 	position: relative;
 }
 
@@ -26,9 +25,13 @@
 	display: block;
 	float: left;
 	position: relative;
+
+	@include breakpoint(749px, 'max-width') { float: none; }
 }
 .footer--logo {
-	width: 274px;
+	width: 25%;
+	@include breakpoint(919px, 'max-width') { width: 25%; }
+	@include breakpoint(749px, 'max-width') { margin-bottom: 20px; width: 100%; }
 
 	span {
 		color: #01277d;
@@ -42,15 +45,27 @@
 		position: relative;
 	}
 }
+.footer-logo__con {
+	display: block;
+	position: relative;
+	@include breakpoint(749px, 'max-width') {
+		margin: 0 auto;
+		width: 219px;
+	}
+}
 
 .footer-logo {	
 	@include wh(219px, 35px);
 	@include bgs('../img/logo.png', contain);	
 	display: block;
 	position: relative;
+
+	@include breakpoint(919px, 'max-width') { width: 100%; }
 }
 .footer--nav {
-	width: 570px;
+	width: 50%;
+	@include breakpoint(919px, 'max-width') { width: 57%; }
+	@include breakpoint(749px, 'max-width') { margin-bottom: 20px; width: 100%; }
 }
 .footer-nav {
 	@extend %cf;
@@ -78,18 +93,28 @@
 }
 .footer--other {
 	@extend %cf;
-	width: 255px;
+	width: 25%;
+	@include breakpoint(919px, 'max-width') { width: 18%; }
+	@include breakpoint(749px, 'max-width') { width: 100%; }
+
 }
 
 .other-con {
+	@extend %cf;
 	display: block;
 	float: right;
+
+	@include breakpoint(749px, 'max-width') { float: none; width: 280px; margin: 0 auto; }
 }
 .other__list {
 	display: block;
 	position: relative;
-	
-	&:not(:last-child) { margin-bottom: 18px; }
+
+	@include breakpoint(749px, 'max-width') { float: left; }
+	&:not(:last-child) { 
+		margin-bottom: 18px;
+		@include breakpoint(749px, 'max-width') { margin-right: 20px; }
+	}
 }
 
 .footer__copyright {
@@ -98,7 +123,13 @@
 	text-align: center;
 	position: relative;
 	top: -55px;
-	
+	@include breakpoint(919px, 'max-width') { text-align: left; }
+	@include breakpoint(749px, 'max-width') { 
+		margin-top: 20px; 
+		top: 0; 
+		text-align: center;
+		padding-bottom: 40px;
+	}
 	p {
 		color: #929ba4;
 		display: block;
