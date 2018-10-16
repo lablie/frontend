@@ -14,6 +14,8 @@
 		weight: 300;
 	}
 	margin-bottom: 12px;
+
+	@include breakpoint(779px, 'max-width') { text-align: center; }
 }
 
 .input--cat {
@@ -26,6 +28,8 @@
 	margin-top: 20px;
 	max-width: 515px;
 	text-align: center;
+
+	@include breakpoint(779px, 'max-width') { margin: 20px auto 40px; }
 	
 	span {	
 		cursor: pointer;
@@ -47,6 +51,8 @@
 	display: block;
 	max-width: 515px;
 	padding: 0 15px;
+
+	@include breakpoint(779px, 'max-width') { margin: 0 auto; }
 
 	&.active-drop {
 		@include prefix(box-shadow, 0px 0px 37px -3px rgba(255,255,255,0.75))
@@ -135,6 +141,8 @@
 		weight: normal;
 	}
 	margin-bottom: 28px;
+
+	
 }
 
 .review__list {

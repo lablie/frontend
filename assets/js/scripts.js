@@ -19,19 +19,21 @@ $( document ).ready(function() {
   	});
   	
   	$('#other-category').click(function(e) {
-  		$('.modal-con').animate({top : '50%'},{
+  		$('.modal-con.modal--category').animate({top : '50%'},{
   			duration: 400,
   			start: function() {
+          $(this).show()
   				$('.modal-wrap').show();
   			}
   		});
   	});
 
-  	$('#modal-close').click(function(e) {
+  	$('.modal-close').click(function(e) {
   		$('.modal-con').animate({top : '-100%'},{
   			duration: 400,
   			complete: function() {
   				$('.modal-wrap').hide();
+          $(this).hide();
   			}
   		});
   	});
@@ -46,6 +48,17 @@ $( document ).ready(function() {
   			}
   		});
   	});
+
+    $('.review__list').click(function(e) {
+      $('.modal-con.modal--review').animate({top : '50%'},{
+        duration: 400,
+        start: function() {
+          $(this).show()
+          $('.modal-wrap').show();
+        }
+      });
+    });
+    
 
   	
 });

@@ -17,7 +17,7 @@
 		width: 49px;
 	}
 	&--4 { 
-		@include bgs('../img/star-34.png', contain)
+		@include bgs('../img/star-4.png', contain)
 		width: 66px;
 	}
 	&--5 { 
@@ -53,8 +53,11 @@
 	position: absolute;
 	right: 15px;
 	top: 15px;
-
-	&:hover {
-		opacity: 0.6;
+	
+	@include breakpoint(992px, 'min-width') {
+		&:hover {
+			opacity: 0.6;
+		}
 	}
+	
 }

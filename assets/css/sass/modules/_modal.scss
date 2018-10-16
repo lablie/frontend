@@ -2,7 +2,7 @@
 	@include wh(100%, 100%)
 	background: rgba(0, 0, 0, 0.5);
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	z-index: 11;
 }
@@ -13,13 +13,35 @@
 	@include wh(100%, 550px)
 	@include prefix(box-shadow, 0px 0px 21px -1px rgba(0,0,0,0.75));
 	background: #fff;
-	display: block;
+	display: none;
 	padding: 48px 0;
-	max-width: 730px;
+	
 	overflow: hidden;
 	top: -100%;
-}
 
+	@include breakpoint(840px, 'max-width') { width: 80%; }
+	@include breakpoint(530px, 'max-width') { 
+		@include bradius(all, 0)
+		height: 100%;
+		position: relative;
+		top: 50% !important;
+		width: 100%;
+	}
+
+	h3 {
+		color: #2b2c2d;
+		display: block;
+		font: {
+			size: 21px;
+			weight: 300;
+		}
+		margin-bottom: 5px;
+		position: relative;
+		text-transform: uppercase;
+	}
+}
+.modal--category { max-width: 730px; }
+.modal--review { max-width: 530px; }
 .modal-category {
 	@include wh(100%, 100%);
 	color: #000;
@@ -36,17 +58,6 @@
 		}
 	}
 
-	h3 {
-		color: #2b2c2d;
-		display: block;
-		font: {
-			size: 21px;
-			weight: 300;
-		}
-		margin-bottom: 5px;
-		position: relative;
-		text-transform: uppercase;
-	}
 } //.modal-category
 
 .modal-category__con {
@@ -55,6 +66,7 @@
 	margin-top: 30px;
 	position: relative;
 	overflow: auto;
+	@include breakpoint(530px, 'max-width') { height: 100%; }
 }
 .modal-category-list {
 	list-style: none;
@@ -72,8 +84,140 @@
 		padding: 6px 0;
 		width: 50%;
 
+		@include breakpoint(840px, 'max-width') { float: none; width: 100% }
+
 		&:hover {
 			font-weight: bold;
 		}
 	}
+}
+
+.modal-review {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding: 0 20px;
+
+	h3, h4 {
+		margin-bottom: 15px;
+		&:before {
+			@include wh(100%, 1px);
+			background: #000;
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+		}
+	}
+	h4 {
+		display: block;
+		font: {
+			size: 20px;
+			weight: 300;
+		}
+		position: relative;
+		
+		span {
+			display: inline-block;
+			font: {
+				size: 14px;
+				weight: 300;
+			}
+		}
+	}
+}
+.modal-review__con {
+	@extend %cf;
+	color: #000;
+	display: block;
+	padding: 10px 0;
+	position: relative;
+	width: 100%;
+}
+.modal-review__img {
+	@include wh(62px, 62px);
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+.modal-review__info {
+	display: block;
+	float: left;
+	
+	span {
+		display: block;
+		&:not(:last-child) { margin-bottom: 3px; }
+	}
+}
+.modal-review--name {
+	color: #000;
+	font: {
+		family: 'Gotham-book';
+		size: 20px;
+		weight: normal;
+	}
+}
+.modal-review--location {
+	color: #dadada;
+	font: {
+		family: 'Gotham-book';
+		size: 13px;
+		weight: normal;
+	}
+}
+
+.modal-review--cat {
+	color: #000;
+	font: {
+		family: 'Gotham-book';
+		size: 13px;
+		weight: normal;
+	}
+}
+.ratings--lbl {
+	display: block;
+	font: {
+		size: 14px;
+		weight: 300;
+	}
+	margin-bottom: 5px;
+	position: relative;
+}
+.ratings-con {
+	list-style-type: none;
+
+	li {
+		@extend %cf;
+		color: #000;
+		display: block;
+		padding: 3px 0;
+		width: 100%;
+		font: {
+			size: 14px;
+			weight: normal;
+		}
+
+		i { float: right; }
+	}
+}
+
+.modal-review--comment {
+	border-top: 1px solid #000;
+
+	p {
+		display: block;
+		font: {
+			size: 13px;
+			weight: normal;
+		}
+	}
+}
+.comment--info {
+	display: block;
+	font: {
+		size: 13px;
+		weight: 300;
+	}
+	margin-bottom: 10px;
 }
